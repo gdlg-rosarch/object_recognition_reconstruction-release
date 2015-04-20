@@ -14,6 +14,7 @@ import ecto_pcl
 import object_recognition_core
 import os
 import shutil
+import subprocess
 import sys
 import tempfile
 
@@ -60,6 +61,7 @@ FILTER_SCRIPT_PIVOTING='''
  <filter name="Laplacian Smooth">
   <Param type="RichInt" value="3" name="stepSmoothNum"/>
   <Param type="RichBool" value="true" name="Boundary"/>
+  <Param type="RichBool" value="false" name="cotangentWeight"/>
   <Param type="RichBool" value="false" name="Selected"/>
  </filter>
 </FilterScript>
@@ -72,7 +74,10 @@ def meshlab(filename_in, filename_out):
     script = f.name
     f.write(FILTER_SCRIPT_PIVOTING)
     f.close()
-    subprocess.check_call((['meshlabserver', '-i', filename_in, '-o', filename_out, '-s', script]))
+    env = os.environ
+    env['LC_NUMERIC'] = 'C'
+    subprocess.Popen('meshlabserver -i ' + filename_in + ' -o ' + filename_out + ' -s ' + script,
+                     env=env, cwd=os.getcwd(), shell=True).wait()
     os.unlink(script)
 
 def simple_mesh_session(dbs, session, args):

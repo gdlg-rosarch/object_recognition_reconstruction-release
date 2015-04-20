@@ -1,0 +1,44 @@
+ros-hydro-object-recognition-reconstruction (0.3.4-0quantal) quantal; urgency=high
+
+  * re-writing of #5 without sudo. Needs testing
+  * Add a missing parameter to the Laplacian Smooth filter (cotangentWeight)
+  * clean extensions
+  * Contributors: Jorge Santos Simón, Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sun, 19 Apr 2015 22:00:00 -0000
+
+ros-hydro-object-recognition-reconstruction (0.3.3-0quantal) quantal; urgency=high
+
+  * Merge pull request #3 <https://github.com/wg-perception/reconstruction/issues/3> from garaemon/fix-obs-ids-tuple
+    cast obs_ids to list
+  * cast obs_ids to list
+  * Contributors: Ryohei Ueda, Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 13 Dec 2014 23:00:00 -0000
+
+ros-hydro-object-recognition-reconstruction (0.3.2-0quantal) quantal; urgency=high
+
+  * use local code to convert OpenCV to Eigen
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Thu, 20 Nov 2014 23:00:00 -0000
+
+ros-hydro-object-recognition-reconstruction (0.3.1-0quantal) quantal; urgency=high
+
+  * no need to depend on OpenCV as we get it by transition
+  * get the code to compile under Indigo
+  * Contributors: Vincent Rabaud
+  * no need to depend on OpenCV as we get it by transition
+  * get the code to compile under Indigo
+  * Contributors: Vincent Rabaud
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 26 Jul 2014 22:00:00 -0000
+
+ros-hydro-object-recognition-reconstruction (0.3.0-0quantal) quantal; urgency=high
+
+  * drop Fuerte support
+  * fix meshlab dependency
+
+ -- Vincent Rabaud <vincent.rabaud@gmail.com>  Sat, 07 Dec 2013 13:13:06 +0100
+
+

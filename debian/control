@@ -1,0 +1,12 @@
+Source: ros-kinetic-object-recognition-reconstruction
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vincent.rabaud@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cmake-modules, ros-kinetic-ecto, ros-kinetic-ecto-image-pipeline, ros-kinetic-ecto-pcl, ros-kinetic-object-recognition-core, ros-kinetic-opencv-candidate, ros-kinetic-sensor-msgs
+Homepage: http://wg-perception.github.io/reconstruction/
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-object-recognition-reconstruction
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, meshlab, ros-kinetic-ecto, ros-kinetic-ecto-image-pipeline, ros-kinetic-ecto-pcl, ros-kinetic-object-recognition-core, ros-kinetic-opencv-candidate
+Description: basic 3d reconstruction of an object from aligned Kinect data

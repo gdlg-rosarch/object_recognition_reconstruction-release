@@ -1,3 +1,26 @@
+## object_recognition_reconstruction (jade) - 0.3.6-0
+
+The packages in the `object_recognition_reconstruction` repository were released into the `jade` distro by running `/usr/bin/bloom-release --track jade --rosdistro jade object_recognition_reconstruction` on `Sat, 30 Apr 2016 17:57:42 -0000`
+
+The `object_recognition_reconstruction` package was released.
+
+Version of package(s) in repository `object_recognition_reconstruction`:
+
+- upstream repository: https://github.com/wg-perception/reconstruction.git
+- release repository: https://github.com/ros-gbp/object_recognition_reconstruction-release.git
+- rosdistro version: `0.3.5-0`
+- old version: `0.3.5-0`
+- new version: `0.3.6-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## object_recognition_reconstruction (indigo) - 0.3.6-1
 
 The packages in the `object_recognition_reconstruction` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo object_recognition_reconstruction` on `Sat, 30 Apr 2016 17:54:19 -0000`
